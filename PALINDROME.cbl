@@ -38,7 +38,7 @@
            ADD 1 TO WS-I
            MOVE FUNCTION REVERSE(WS-PAL) TO WS-TEMP
 
-           DISPLAY WS-TEMP(WS-I:WS-LEN)
+           DISPLAY WS-PAL ' = ' WS-TEMP(WS-I:WS-LEN)
 
            IF WS-PAL = WS-TEMP(WS-I:WS-LEN)
              DISPLAY ' PALINDROME'
